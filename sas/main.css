@@ -1,0 +1,147 @@
+.fade-in-text {
+    animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+          0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+.button, input[type=submit], input[type=reset] {
+border: none;
+border-radius:10px;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+outline: none;
+display: inline-block;
+margin: 4px 2px;
+font-size: 16pt;
+font-family: 'Tahoma';
+cursor: pointer;
+}
+.allover{
+background-color: #04AA6D;
+}
+.register{
+    font-size: 8pt;
+    color: white;
+    outline: none;
+    display: inline-block;
+}
+    .button0 {width: 190px;
+    background-color: #4CAF50;
+    box-align:center;
+    }
+
+nav{
+  position: fixed;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+/*border: 1px solid #e7e7e7;*/
+background-color:none;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: rgba(212, 206, 206, 0.836);
+text-align: center;
+padding: 1px 16px;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16pt;
+transition: 0.9s;
+}
+
+li a:hover:not(.active) {
+background-color: rgba(5, 207, 180, 0.637);
+}
+
+li a.active {
+color: none;
+background-color: #04AA6D;
+}
+h3{
+    color: blue;
+}
+.field{
+    border: none;
+    text-align: justify;
+}
+.nobox{
+    border: none;
+    text-indent:0%;
+}
+.con{
+  font-size: 14pt;
+  color: azure;
+  text-align: left;
+}
+.paragraph{
+    font-size: 16pt;
+    color: rgb(255, 255, 255);
+}
+.right{
+    color: rgb(255, 255, 255);
+    font-size: 14pt;
+    text-decoration: none;
+  }
+  .field1{
+    border: none;
+    text-align: center;
+    text-indent: 20%;
+  }
+  .dark {
+    background: url(back.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+  }
+  .darkbg {
+    content: '';
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.721); /* Change the alpha value to adjust the transparency */
+    z-index: -1;
+  }
+  @media(max-width: 700px){
+    #home{
+      width:50%;
+      height:50%;
+      text-align:center;
+      padding:50px;
+      color:#e6f2ff;
+      font-size: 16pt;
+      font-family:"Bradley Hand";
+    }
+  }
+  #home{
+    width:50%;
+    height:50%;
+    text-align:center;
+    padding:50px;
+    color:#e6f2ff;
+    font-size: 35pt;
+    font-family:"Bradley Hand";
+  }
+  .services{
+    color:white;
+    font-size: 5pt;
+    text-align: center;
+    margin: 4%;
+    padding: 10%;
+  }

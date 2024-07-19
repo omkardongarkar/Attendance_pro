@@ -1,0 +1,59 @@
+//create new database
+create database attend;
+
+//connect to database
+\c attend
+
+//hod role
+CREATE TABLE department_heads (
+    id SERIAL NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    phone varchar(10),
+    img BYTEA,
+    PRIMARY KEY (id));
+    
+select * from department_heads;
+insert into department_heads values(1,'amol tribhuwan','amoltribhuwan05@gmail.com','12345','amol','8329949643')
+
+    //teacher table
+    
+CREATE TABLE teachers (
+    id SERIAL,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,username VARCHAR(255),phone VARCHAR(10),
+    department_name VARCHAR(255),qualification VARCHAR(255),img BYTEA,
+    PRIMARY KEY (id));
+ 
+ //student role 
+ 
+ CREATE TABLE students (
+    id VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,username VARCHAR(255),
+    PRIMARY KEY (id),phone VARCHAR(255),p_phone VARCHAR(255),department_name VARCHAR(255) NOT NULL,class VARCHAR(255),admission_date DATE,img BYTEA);
+    
+    //attendance table
+    CREATE TABLE attendance(stud_id  VARCHAR REFERENCES students(id),date DATE,status VARCHAR DEFAULT 'A');
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//ALTER TABLE department_heads ADD COLUMN username VARCHAR(255);
+//ALTER TABLE department_heads ADD COLUMN email VARCHAR(255);
+//ALTER TABLE department_heads ADD COLUMN phone varchar(10);
+//ALTER TABLE department_heads ADD COLUMN img BYTEA;
+
+//ALTER TABLE teachers ADD COLUMN qualification VARCHAR(255);

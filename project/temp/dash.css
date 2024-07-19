@@ -1,0 +1,92 @@
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav li {
+	margin-left: 1rem;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+main {
+	margin-top: 4rem;
+	padding: 2rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+/* Teacher-specific styles */
+.teacher {
+	background-color: #ffd;
+	border: 2px solid #fa0;
+	padding: 1rem;
+}
+
+.teacher h1 {
+	color: #fa0;
+}
+
+/* Admin-specific styles */
+.admin {
+	background-color: #ddf;
+	border: 2px solid #0af;
+	padding: 1rem;
+}
+
+.admin h1 {
+	color: #0af;
+}
+
+/* Student-specific styles */
+.student {
+	background-color: #dfd;
+	border: 2px solid #0a0;
+	padding: 1rem;
+}
+
+.student h1 {
+	color: #0a0;
+}

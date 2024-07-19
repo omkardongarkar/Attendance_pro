@@ -1,0 +1,144 @@
+body {
+	font-family: Arial, sans-serif;
+	/*background-color: #ffffff;*/
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+form{
+	background-color: #ffffffb6;
+	border: 1px solid #110e0ef8;
+	border-radius: 5px;
+	/*box-shadow: 0px 0px 10px #cccccc;*/
+	padding: 20px;
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="select"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+input[type="submit"],input[type="reset"] {
+	background-color: #4CAF50;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,input[type="reset"]:hover {
+	background-color: #3e8e41;
+}
+
+.error {
+	color: #ff0000;
+	margin-bottom: 10px;
+}
+
+.green{
+color: #4CAF50;
+text-decoration:none;
+border:none;
+font-size:10pt;
+}
+footer{
+color:#aca7a7f1;
+}
+.dashrole{
+color: gray;
+text-decoration:bold;
+border:none;
+text-align:right;
+}
+
+.dashrole:hover{
+color: green;
+text-decoration:bold;
+border:none;
+text-align:right;
+}
+
+/*attend*/
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 1em;
+	border-radius: 12px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+
+th {
+	background-color: #666;
+	color:white;
+}
+
+th, td {
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	text-align: center;
+	font-size:14pt;
+	}
+
+td{
+	background-color:#eee;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+.orange-bg {
+  background-color: #e34262;
+}
+
+
+
+
+
+
+select {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+select:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.search input[type="text"]{
+width: 10%;
+}
